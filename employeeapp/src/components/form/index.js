@@ -11,7 +11,21 @@ function Form() {
   const [_, dispatch] = useEmployeeContext();
 
   function handleSubmit(e) {
+    e.preventDefault();
 
+    dispatch({
+      type: "add",
+      name: nameRef.current.value,
+      img: imgRef.current.value,
+      phone: phoneRef.current.value,
+      email: emailRef.current.value,
+      dob: dobRef.current.value
+    });
+      nameRef.current.value = "";
+      imgRef.current.value = "";
+      phoneRef.current.value = "";
+      emailRef.current.value = "";
+      dobRef.current.value = "";
   }
 
   return (
