@@ -25,6 +25,7 @@ function reducer (state, action) {
                 }
             ];
         case "sort":
+            return [...state].sort((a,b)=> (a.name > b.name ? 1 : -1))
      default:
          return state;       
     }

@@ -19,8 +19,8 @@ function List() {
             <br />
             <div className="row tableheader">
                 <p className="col-2"><strong>Image: </strong></p>
-                <p className="col-2"><strong>Name: </strong></p>
-                <p className="col-2" onClick={runSort}><strong>Phone: </strong></p> 
+                <p className="col-2" onClick={runSort}><strong>Name: </strong></p>
+                <p className="col-2"><strong>Phone: </strong></p> 
                 <p className="col-2"><strong>Email: </strong></p>
                 <p className="col-2"><strong>DOB: </strong></p>
             </div>
@@ -35,7 +35,7 @@ function List() {
                             <p className="col-2">{item.dob}</p>
                         </div>
                     </li>
-                ))};
+                ))}
             </ul>
         </div>
   )
