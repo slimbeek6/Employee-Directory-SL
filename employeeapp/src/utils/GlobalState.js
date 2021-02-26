@@ -24,6 +24,7 @@ function reducer (state, action) {
                 dob: action.dob
                 }
             ];
+        case "sort":
      default:
          return state;       
     }
