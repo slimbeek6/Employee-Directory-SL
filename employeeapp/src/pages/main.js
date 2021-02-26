@@ -1,18 +1,17 @@
 import React from "react";
 import List from "../components/list";
-import ListItem from "../components/listItem";
-import EmployeeCard from "../components/employeeCard";
+import Form from "../components/form";
+import {ListProvider} from "../utils/GlobalState";
 
 function Main() {
-    // const employeeList = [];
+    const employeeList = [];
   
     return (
         <div>
-            <List>
-                <ListItem>
-                    <EmployeeCard></EmployeeCard>
-                </ListItem>
-            </List>
+            <ListProvider>
+                <List />
+                <Form />
+            </ListProvider>
         </div>
     )
   }
