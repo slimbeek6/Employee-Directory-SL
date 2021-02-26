@@ -4,14 +4,16 @@ import ListItem from "../components/listItem";
 import EmployeeCard from "../components/employeeCard";
 
 function Main() {
-    const employeeList = [];
+    // const employeeList = [];
   
     return (
-      <List>
-        <ListItem>
-            <EmployeeCard></EmployeeCard>
-        </ListItem>
-      </List>
+        <div>
+            <List>
+                <ListItem>
+                    <EmployeeCard></EmployeeCard>
+                </ListItem>
+            </List>
+        </div>
     )
   }
   
