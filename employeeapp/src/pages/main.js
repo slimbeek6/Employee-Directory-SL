@@ -10,8 +10,11 @@ function Main() {
     return (
         <div>
             <ListProvider>
+                <Header>
+                    <Form />
+                </Header>
                 <List />
-                <Form />
+                
             </ListProvider>
         </div>
     )
