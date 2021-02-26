@@ -24,7 +24,8 @@ function reducer (state, action) {
                 dob: action.dob
                 }
             ];
-            
+     default:
+         return state;       
     }
 }
 

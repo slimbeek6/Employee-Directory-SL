@@ -1,4 +1,3 @@
-import { useRef } from "react";
 import React, { useRef } from "react";
 import { useEmployeeContext } from "../../utils/GlobalState";
 
@@ -30,7 +29,7 @@ function Form() {
 
   return (
    <div>
-      <h4>Add an Employee:</h1>
+      <h4>Add an Employee:</h4>
       <form className="form-group mt-5" onSubmit={handleSubmit}>
         <input className="form-control" ref={nameRef} name="name" placeholder="Enter name" />
         <input className="form-control" ref={imgRef} name="img" placeholder="Enter img url" />

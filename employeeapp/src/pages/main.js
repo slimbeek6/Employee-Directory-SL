@@ -1,21 +1,19 @@
 import React from "react";
 import List from "../components/list";
 import Form from "../components/form";
-import {ListProvider} from "../utils/GlobalState";
+import Header from "../components/header";
+import { EmployeeProvider } from "../utils/GlobalState";
 import "../App.css";
 
-function Main() {
-    const employeeList = [];
-  
+function Main() { 
     return (
         <div>
-            <ListProvider>
+            <EmployeeProvider>
                 <Header>
                     <Form />
                 </Header>
                 <List />
-                
-            </ListProvider>
+            </EmployeeProvider>
         </div>
     )
   }
